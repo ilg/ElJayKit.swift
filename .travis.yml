@@ -1,13 +1,12 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
+osx_image: xcode7.2
 language: objective-c
 cache: cocoapods
 podfile: ElJayKit-Example/Podfile
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
+- gem install --no-ri --no-rdoc cocoapods # Since Travis is not always on latest version
 - pod install --project-directory=ElJayKit-Example
-script:
-- set -o pipefail && xcodebuild test -workspace ElJayKit-Example/ElJayKit-Example.xcworkspace -scheme ElJayKit-Example -sdk macosx ONLY_ACTIVE_ARCH=NO | xcpretty
+xcode_workspace: ElJayKit-Example/ElJayKit-Example.xcworkspace
+xcode_scheme: ElJayKit-Example
+xcode_sdk: macosx
+after_success:
 - pod lib lint
