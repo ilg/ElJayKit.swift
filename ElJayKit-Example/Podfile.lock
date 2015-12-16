@@ -15,16 +15,23 @@ PODS:
     - VOKBenkode (~> 0.2.1)
 
 DEPENDENCIES:
+  - AlamofireXMLRPC (from `https://github.com/ilg/AlamofireXMLRPC.git`, branch `base64-data`)
   - ElJayKit (from `../`)
   - VOKMockUrlProtocol (from `https://github.com/vokal-isaac/VOKMockUrlProtocol.git`)
 
 EXTERNAL SOURCES:
+  AlamofireXMLRPC:
+    :branch: base64-data
+    :git: https://github.com/ilg/AlamofireXMLRPC.git
   ElJayKit:
     :path: "../"
   VOKMockUrlProtocol:
     :git: https://github.com/vokal-isaac/VOKMockUrlProtocol.git
 
 CHECKOUT OPTIONS:
+  AlamofireXMLRPC:
+    :commit: d6ed3f45640551248a28b9805b4283b2321f4ae4
+    :git: https://github.com/ilg/AlamofireXMLRPC.git
   VOKMockUrlProtocol:
     :commit: b143b944791688d243aab2bd00c98d9e6b6e46e8
     :git: https://github.com/vokal-isaac/VOKMockUrlProtocol.git
