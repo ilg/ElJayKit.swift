@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 15 Dec 2015 08:42:27 GMT
+Content-Type: text/xml
+Content-Length: 128
+Connection: keep-alive
+X-AWS-Id: ws37
+X-LJ-Flow-ID: Vm-Sc6wVBGQAAHe0EzgAAAAI
+SOAPServer: SOAP::Lite/Perl/1.17
+Accept-Ranges: bytes
+X-Varnish: 785656432
+Age: 0
+X-VWS-Id: bil1-varn21
+X-Gateway: bil1-swlb05
+
+<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct /></value></param></params></methodResponse>

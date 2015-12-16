@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 15 Dec 2015 08:26:54 GMT
+Content-Type: text/xml
+Content-Length: 2881
+Connection: keep-alive
+X-AWS-Id: ws03
+X-LJ-Flow-ID: Vm-OzqwVBEIAAGp0Gx4AAAAK
+X-RateLimit-Limit: inf
+X-RateLimit-Remaining: -
+X-RateLimit-Reset: 
+X-RateLimit-Name: 
+SOAPServer: SOAP::Lite/Perl/1.17
+Accept-Ranges: bytes
+X-Varnish: 253308753
+Age: 0
+X-VWS-Id: bil1-varn25
+X-Gateway: bil1-swlb03
+
+<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>identity_type</name><value><string /></value></member><member><name>identity_value</name><value><string /></value></member><member><name>moods</name><value><array><data /></array></value></member><member><name>is_validated</name><value><int>1</int></value></member><member><name>identity_display</name><value><string /></value></member><member><name>userid</name><value><int>17800245</int></value></member><member><name>friendgroups</name><value><array><data><value><struct><member><name>public</name><value><int>0</int></value></member><member><name>name</name><value><string>Mobile View</string></value></member><member><name>id</name><value><int>6</int></value></member><member><name>sortorder</name><value><int>50</int></value></member></struct></value><value><struct><member><name>public</name><value><int>0</int></value></member><member><name>name</name><value><string>School</string></value></member><member><name>id</name><value><int>4</int></value></member><member><name>sortorder</name><value><int>50</int></value></member></struct></value><value><struct><member><name>public</name><value><int>0</int></value></member><member><name>name</name><value><string>Family</string></value></member><member><name>id</name><value><int>1</int></value></member><member><name>sortorder</name><value><int>50</int></value></member></struct></value><value><struct><member><name>public</name><value><int>0</int></value></member><member><name>name</name><value><string>Online Friends</string></value></member><member><name>id</name><value><int>3</int></value></member><member><name>sortorder</name><value><int>50</int></value></member></struct></value><value><struct><member><name>public</name><value><int>0</int></value></member><member><name>name</name><value><string>Local Friends</string></value></member><member><name>id</name><value><int>2</int></value></member><member><name>sortorder</name><value><int>50</int></value></member></struct></value><value><struct><member><name>public</name><value><int>0</int></value></member><member><name>name</name><value><string>Work</string></value></member><member><name>id</name><value><int>5</int></value></member><member><name>sortorder</name><value><int>50</int></value></member></struct></value></data></array></value></member><member><name>username</name><value><string>aslj_client</string></value></member><member><name>usejournals</name><value><array><data><value><string>aslj_users</string></value><value><string>lj_dev</string></value><value><string>lj_nifty</string></value></data></array></value></member><member><name>identity_url</name><value><string /></value></member><member><name>fullname</name><value><string>asLJ: LiveJournal Client for Mac OS X 10.5+</string></value></member></struct></value></param></params></methodResponse>

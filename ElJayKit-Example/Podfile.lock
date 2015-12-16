@@ -1,0 +1,42 @@
+PODS:
+  - AEXML (2.0.1)
+  - Alamofire (3.1.3)
+  - AlamofireXMLRPC (1.0.0):
+    - AEXML
+    - Alamofire
+  - ElJayKit (0.1.0):
+    - AlamofireXMLRPC (~> 1.0)
+    - MD5Digest
+  - ILGHttpConstants (1.0.1)
+  - MD5Digest (1.1.0)
+  - VOKBenkode (0.2.1)
+  - VOKMockUrlProtocol (2.1.1):
+    - ILGHttpConstants (~> 1.0.0)
+    - VOKBenkode (~> 0.2.1)
+
+DEPENDENCIES:
+  - ElJayKit (from `../`)
+  - VOKMockUrlProtocol (from `https://github.com/vokal-isaac/VOKMockUrlProtocol.git`)
+
+EXTERNAL SOURCES:
+  ElJayKit:
+    :path: "../"
+  VOKMockUrlProtocol:
+    :git: https://github.com/vokal-isaac/VOKMockUrlProtocol.git
+
+CHECKOUT OPTIONS:
+  VOKMockUrlProtocol:
+    :commit: b143b944791688d243aab2bd00c98d9e6b6e46e8
+    :git: https://github.com/vokal-isaac/VOKMockUrlProtocol.git
+
+SPEC CHECKSUMS:
+  AEXML: d6bb5b994521fcf3667ee8ccc1ed533f31b19218
+  Alamofire: 9f93b56389e48def9220dd57d1f44b1927229a5a
+  AlamofireXMLRPC: e07967849f7a43cd60eee336c29afcbe7ca277a9
+  ElJayKit: af7c448d0c7db72d4956907518281cd68ab3ee70
+  ILGHttpConstants: 715aca4c2b260527059242c0088abc748b52f98e
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+  VOKBenkode: 7f17656dbb496b472c12913d1a8b8bc15b43d0bd
+  VOKMockUrlProtocol: f44c5edaba3fa147bacb96aa0bb4b747f2a4554e
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 15 Dec 2015 08:34:19 GMT
+Content-Type: text/xml
+Content-Length: 280
+Connection: keep-alive
+X-AWS-Id: ws34
+X-LJ-Flow-ID: Vm-QiqwVBGEAAFhhuz0AAAAU
+SOAPServer: SOAP::Lite/Perl/1.17
+Accept-Ranges: bytes
+X-Varnish: 1581534899
+Age: 0
+X-VWS-Id: bil1-varn24
+X-Gateway: bil1-swlb08
+
+<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>ljsession</name><value><string>v2:u17800245:s239:ayMTTTRXW9B:gc403c060ccb3222389b46dfa2bd083c80880ba0c//1</string></value></member></struct></value></param></params></methodResponse>

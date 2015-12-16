@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 15 Dec 2015 08:11:11 GMT
+Content-Type: text/xml
+Content-Length: 509
+Connection: keep-alive
+X-AWS-Id: ws31
+X-LJ-Flow-ID: Vm-LH6wVBF4AAHF-hV0AAAAC
+SOAPServer: SOAP::Lite/Perl/1.17
+Accept-Ranges: bytes
+X-Varnish: 1109431788
+Age: 0
+X-VWS-Id: bil1-varn27
+X-Gateway: bil1-swlb04
+Set-Cookie: ljident=2885948844.20480.0000;domain=.livejournal.com; path=/
+
+<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>auth_scheme</name><value><string>c0</string></value></member><member><name>server_time</name><value><int>1450167071</int></value></member><member><name>challenge</name><value><string>c0:1450166400:671:60:9TyQyiJ0zmxv0x11PSW8:2f9a1ce8b7845a519726a7bac790df9f</string></value></member><member><name>expire_time</name><value><int>1450167131</int></value></member></struct></value></param></params></methodResponse>

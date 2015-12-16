@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ElJayKit-Example', :exclusive => true do
+  pod "ElJayKit", :path => "../"
+end
+
+target 'ElJayKit-ExampleTests', :exclusive => true do
+  pod "ElJayKit", :path => "../"
+  pod "VOKMockUrlProtocol", :git => "https://github.com/vokal-isaac/VOKMockUrlProtocol.git" #"~> 2.1.0"
+end
