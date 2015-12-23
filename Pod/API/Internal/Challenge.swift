@@ -38,8 +38,8 @@ extension API {
                 let value = result.value as? XMLRPCNode,
                 let challenge = try? Challenge(xmlrpcNode: value)
                 else {
-                callback(.Failure(.Parsing))
-                return
+                    callback(.Failure(.Parsing))
+                    return
             }
             
             // Success.
