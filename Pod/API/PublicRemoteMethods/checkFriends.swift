@@ -11,14 +11,14 @@ import AlamofireXMLRPC
 
 extension API {
     public enum CheckFriendsResult {
-        case hasNew
-        case nextCheck(NSDate)
+        case HasNew
+        case NextCheck(NSDate)
         
         public var nextCheck: NSDate? {
             switch self {
-            case .hasNew:
+            case .HasNew:
                 return nil
-            case .nextCheck(let date):
+            case .NextCheck(let date):
                 return date
             }
         }
@@ -53,10 +53,10 @@ extension API {
 
 extension API.CheckFriendsResult: XMLRPCDeserializable {
     init(xmlrpcNode value: XMLRPCNode) throws {
-        if let hasNew = value[API.ResponseKey.New].int32  where hasNew != 0 {
-            self = .hasNew
+        if let hasNew = value[API.ResponseKey.New].int32 where hasNew != 0 {
+            self = .HasNew
         } else if let interval = value[API.ResponseKey.Interval].int32 {
-            self = .nextCheck(NSDate(timeIntervalSinceNow: NSTimeInterval(interval)))
+            self = .NextCheck(NSDate(timeIntervalSinceNow: NSTimeInterval(interval)))
         } else {
             throw API.ParseError.BadStructure
         }
