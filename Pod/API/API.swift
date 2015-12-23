@@ -49,7 +49,7 @@ public struct API {
     }
     
     /**
-     Create an API instance for the given server and the given user with the given plaintext password.
+     Create an API instance for the given server and the given user with the given MD5 password hash.
      
      - parameter server:   The server to target
      - parameter username: The user
