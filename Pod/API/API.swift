@@ -45,7 +45,7 @@ public struct API {
      - returns: The API instance
      */
     public init(server: Server, username: String, password: String, manager: Manager = Manager.sharedInstance) {
-        self.init(server: server, username: username, passwordMD5:(password as NSString).MD5Digest(), manager: manager)
+        self.init(server: server, username: username, passwordMD5: password.MD5Digest(), manager: manager)
     }
     
     /**

@@ -22,7 +22,7 @@ extension API {
         
         func response(passwordMD5 passwordMD5: String) -> String {
             // Response is md5( challenge + md5([password]) )   where md5() returns the hex digest.
-            return ("\(self.challenge)\(passwordMD5)" as NSString).MD5Digest()
+            return "\(self.challenge)\(passwordMD5)".MD5Digest()
         }
     }
     
