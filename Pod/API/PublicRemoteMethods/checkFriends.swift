@@ -30,7 +30,7 @@ extension API {
         callback: Of<CheckFriendsResult>.callback) {
             let lastUpdate: String
             if let lastChecked = lastChecked {
-                lastUpdate = lastChecked.dateString()
+                lastUpdate = lastChecked.ljk_dateString()
             } else {
                 lastUpdate = ""
             }

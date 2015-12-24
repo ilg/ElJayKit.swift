@@ -54,11 +54,11 @@ private let dateFormatter: NSDateFormatter = {
 }()
 
 extension NSDate {
-    func dateString() -> String {
+    func ljk_dateString() -> String {
         return dateFormatter.stringFromDate(self)
     }
     
-    class func dateFromString(dateString: String) -> NSDate? {
+    class func ljk_dateFromString(dateString: String) -> NSDate? {
         return dateFormatter.dateFromString(dateString)
     }
 }
