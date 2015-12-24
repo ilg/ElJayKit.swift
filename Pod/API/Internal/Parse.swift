@@ -24,14 +24,12 @@ extension API {
      
      - parameter method:              The method to call
      - parameter parameters:          The parameters of the call, if any
-     - parameter responseType:        The type of item expected in the response
      - parameter responsePostProcess: A function to apply to the parsed response before invoking the callback
      - parameter callback:            The callback to execute with the result of the call
      */
     func execute<ResponseType: XMLRPCDeserializable>(
         method: Method,
         parameters: [String: Any]? = nil,
-        responseType: ResponseType.Type,
         responsePostProcess: (ResponseType) -> (ResponseType?) = { $0 },
         callback: Of<ResponseType>.callback) {
             self.execute(method, parameters: parameters, callback: { result in
@@ -49,7 +47,7 @@ extension API {
                 
                 // Apply post-processing.
                 guard let postProcessedValue = responsePostProcess(parsedValue) else {
-                    callback(.Failure(.Parsing))
+                    callback(.Failure(.ParsingPostProcess))
                     return
                 }
                 
@@ -63,21 +61,19 @@ extension API {
      
      - parameter method:              The method to call
      - parameter parameters:          The parameters of the call, if any
-     - parameter responseArrayOfType: The type of item expected inside the response array
      - parameter responsePostProcess: A function to apply to the parsed response array before invoking the callback
      - parameter callback:            The callback to execute with the result of the call
      */
     func execute<ResponseItemType: XMLRPCDeserializable>(
         method: Method,
         parameters: [String: Any]? = nil,
-        responseArrayOfType: ResponseItemType.Type,
         responsePostProcess: ([ResponseItemType]) -> ([ResponseItemType]?) = { $0 },
         callback: Of<[ResponseItemType]>.callback) {
             self.execute(
                 method,
                 parameters: parameters,
-                responseType: ArrayContainer<ResponseItemType>.self,
-                responsePostProcess: { arrayContainer in
+                responsePostProcess: { (arrayContainer: ArrayContainer<ResponseItemType>) in
+                    // The input for this closure has to be typed for the compiler to match the right .execute method.
                     guard let processedArray = responsePostProcess(arrayContainer.array) else {
                         return nil
                     }

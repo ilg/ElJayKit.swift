@@ -65,7 +65,6 @@ extension API {
             parameters: [
                 ParameterKey.Commands: commands,
             ],
-            responseArrayOfType: ConsoleCommandOutput.self,
             callback: callback)
     }
 }

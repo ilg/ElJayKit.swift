@@ -11,11 +11,11 @@ import AlamofireXMLRPC
 
 extension API {
     public func friendOf(callback callback: Of<[Friend]>.callback) {
-        self.execute(.friendOf, responseArrayOfType: Friend.self, callback: callback)
+        self.execute(.friendOf, callback: callback)
     }
     
     public func getFriendGroups(callback callback: Of<[FriendGroup]>.callback) {
-        self.execute(.getFriendGroups, responseArrayOfType: FriendGroup.self, callback: callback)
+        self.execute(.getFriendGroups, callback: callback)
     }
     
     public struct GetFriendsResult {
@@ -36,7 +36,6 @@ extension API {
                     ParameterKey.IncludeGroups: ParameterValue.fromBool(includeGroups),
                     ParameterKey.IncludeBirthdays: ParameterValue.fromBool(includeBirthdays),
                 ],
-                responseType: GetFriendsResult.self,
                 callback: callback)
     }
 }

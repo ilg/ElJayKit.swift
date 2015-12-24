@@ -29,7 +29,6 @@ extension API {
                 ParameterKey.GetPicKwUrls: ParameterValue.Yes,
                 ParameterKey.GetMoods: ParameterValue.Yes,  // TODO: fix this parameter
             ],
-            responseType: LoginResult.self,
             callback: callback)
     }
 }

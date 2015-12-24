@@ -46,7 +46,6 @@ extension API {
                         : ParameterValue.SessionExpirationShort),
                 ParameterKey.SessionIPFixed: ParameterValue.fromBool(fixedToIP),
             ],
-            responseType: Session.self,
             responsePostProcess: { originalSession in
                 var session = originalSession
                 session.server = self.server

@@ -46,7 +46,6 @@ extension API {
                     ParameterKey.LastUpdate: lastUpdate,
                     ParameterKey.Mask: mask,
                 ],
-                responseType: CheckFriendsResult.self,
                 callback: callback)
     }
 }
