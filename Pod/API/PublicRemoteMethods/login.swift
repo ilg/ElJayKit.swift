@@ -15,9 +15,13 @@ extension API {
         public let message: String?
         public let friendGroups: [FriendGroup]
         public let useJournals: [String]
-        public let picKeywords: [String]
-        public let picUrls: [String]
-        public let defaultPicUrl: String
+        public let userPics: [UserPic]
+        public let defaultPic: UserPic
+        // TODO: handle moods
+    }
+    public struct UserPic {
+        public let url: NSURL
+        public let keywords: String
     }
     
     public func login(callback callback: Of<LoginResult>.callback) {
@@ -39,8 +43,22 @@ extension API.LoginResult: XMLRPCDeserializable {
         self.message = value[API.ResponseKey.Message].ljString
         self.friendGroups = try ¿value[API.ResponseKey.FriendGroups].arrayOfType(API.FriendGroup.self)
         self.useJournals = try ¿value[API.ResponseKey.Usejournals].array?.flatMap({ $0.ljString })
-        self.picKeywords = try ¿value[API.ResponseKey.UserpicKeywords].array?.flatMap({ $0.ljString })
-        self.picUrls = try ¿value[API.ResponseKey.UserpicURLs].array?.flatMap({ $0.ljString })
-        self.defaultPicUrl = try ¿value[API.ResponseKey.DefaultUserpicURL].ljString
+        self.userPics = zip(
+            try ¿value[API.ResponseKey.UserpicURLs].array,
+            try ¿value[API.ResponseKey.UserpicKeywords].array
+            ).flatMap({ ( urlNode, keywordsNode ) in
+                guard
+                    let urlString = urlNode.ljString,
+                    let url = NSURL(string: urlString),
+                    let keywords = keywordsNode.ljString
+                    else {
+                        return nil
+                }
+                return API.UserPic(url: url, keywords: keywords)
+            })
+        let defaultPicUrlString = try ¿value[API.ResponseKey.DefaultUserpicURL].ljString
+        self.defaultPic = try ¿self.userPics.filter({ userPic in
+            return userPic.url.absoluteString == defaultPicUrlString
+        }).first
     }
 }
