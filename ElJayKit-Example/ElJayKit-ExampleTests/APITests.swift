@@ -35,11 +35,29 @@ class APITests: XCTestCase {
         let api = API(server: .LiveJournal, username: "test_user", password: "password", manager: APITests.manager)
         
         api.login(callback: { result in
-            // TODO: add some serious assertions.
+            defer {
+                expectation.fulfill()
+            }
             XCTAssert(result.isSuccess)
             XCTAssertNotNil(result.value)
             XCTAssertNil(result.error)
-            expectation.fulfill()
+            guard let loginResult = result.value else {
+                XCTFail()
+                return
+            }
+            XCTAssertEqual(loginResult.fullName, "asLJ: LiveJournal Client for Mac OS X 10.5+")
+            XCTAssertNil(loginResult.message)
+            XCTAssertEqual(loginResult.useJournals, ["aslj_users", "lj_dev", "lj_nifty"])
+            XCTAssertEqual(loginResult.defaultPic.url.absoluteString, "http://l-userpic.livejournal.com/103439039/17800245")
+            XCTAssertEqual(loginResult.userPics.first?.url.absoluteString, "http://l-userpic.livejournal.com/103439039/17800245")
+            XCTAssertEqual(loginResult.userPics.first?.keywords, "asLJ")
+            XCTAssertEqual(loginResult.userPics.last?.url.absoluteString, "http://l-userpic.livejournal.com/83760177/17800245")
+            XCTAssertEqual(loginResult.userPics.last?.keywords, "asLJ (up to v0.6.3)")
+            XCTAssertEqual(loginResult.friendGroups.last?.id, 5)
+            XCTAssertEqual(loginResult.friendGroups.last?.isPublic, false)
+            XCTAssertEqual(loginResult.friendGroups.last?.name, "Work")
+            XCTAssertEqual(loginResult.friendGroups.last?.sortOrder, 50)
+            XCTAssertEqual(loginResult.friendGroups.last?.bitMask, 0b100000)
         })
         
         waitForExpectationsWithTimeout(APIExpectationTimeout,
