@@ -47,19 +47,17 @@ extension API {
     
     public func consoleCommand(commands commands: [String], callback: ConsoleCommandCallback) {
         consoleCommand(
-            // Because Swift is stupid and can't turn [String] into [Any]...
-            genericCommands: commands.map({ $0 as Any }),
+            genericCommands: commands,
             callback: callback)
     }
     
     public func consoleCommand(commands commands: [[String]], callback: ConsoleCommandCallback) {
         consoleCommand(
-            // Because Swift is stupid and can't turn [String] into [Any]...
-            genericCommands: commands.map({ $0.map({ $0 as Any }) }),
+            genericCommands: commands,
             callback: callback)
     }
     
-    private func consoleCommand(genericCommands commands: [Any], callback: ConsoleCommandCallback) {
+    private func consoleCommand(genericCommands commands: [AnyObject], callback: ConsoleCommandCallback) {
         self.execute(
             .consoleCommand,
             parameters: [
