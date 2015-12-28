@@ -35,10 +35,10 @@ class APITests: XCTestCase {
         let api = API(server: .LiveJournal, username: "test_user", password: "password", manager: APITests.manager)
         
         api.login(callback: { result in
-            // TODO: fix this test, un-comment the assertions below, and add some serious assertions.
-//            XCTAssert(result.isSuccess)
-//            XCTAssertNotNil(result.value)
-//            XCTAssertNil(result.error)
+            // TODO: add some serious assertions.
+            XCTAssert(result.isSuccess)
+            XCTAssertNotNil(result.value)
+            XCTAssertNil(result.error)
             expectation.fulfill()
         })
         
