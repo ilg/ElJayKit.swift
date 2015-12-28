@@ -45,11 +45,11 @@ public struct API {
      - returns: The API instance
      */
     public init(server: Server, username: String, password: String, manager: Manager = Manager.sharedInstance) {
-        self.init(server: server, username: username, passwordMD5:(password as NSString).MD5Digest(), manager: manager)
+        self.init(server: server, username: username, passwordMD5: password.MD5Digest(), manager: manager)
     }
     
     /**
-     Create an API instance for the given server and the given user with the given plaintext password.
+     Create an API instance for the given server and the given user with the given MD5 password hash.
      
      - parameter server:   The server to target
      - parameter username: The user

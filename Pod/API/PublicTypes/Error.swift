@@ -12,5 +12,6 @@ extension API {
     public enum Error: ErrorType {
         case Network(NSError)
         case Parsing
+        case ParsingPostProcess
     }
 }

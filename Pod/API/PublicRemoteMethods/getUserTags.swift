@@ -36,7 +36,6 @@ extension API {
         self.execute(
             .getUserTags,
             parameters: parameters,
-            responseArrayOfType: Tag.self,
             callback: callback)
     }
 }
