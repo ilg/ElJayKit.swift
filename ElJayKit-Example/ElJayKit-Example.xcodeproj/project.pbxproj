@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		205686C9F96D98CB2A7F3A03 /* Pods_ElJayKit_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6560F6425A2C46F56ACB2978 /* Pods_ElJayKit_ExampleTests.framework */; };
+		2EF30BA3ABAB087FDB293A0B /* Pods_ElJayKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77758F981409C8703E60F5 /* Pods_ElJayKit_Example.framework */; };
+		7134AD701C1A2500009A50DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7134AD6F1C1A2500009A50DD /* AppDelegate.swift */; };
+		7134AD721C1A2500009A50DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7134AD711C1A2500009A50DD /* Assets.xcassets */; };
+		7134AD751C1A2500009A50DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7134AD731C1A2500009A50DD /* MainMenu.xib */; };
+		7134AD801C1A2500009A50DD /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7134AD7F1C1A2500009A50DD /* APITests.swift */; };
+		71CBEE751C2003A8002DBE63 /* VOKMockData in Resources */ = {isa = PBXBuildFile; fileRef = 71CBEE741C2003A8002DBE63 /* VOKMockData */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7134AD7C1C1A2500009A50DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7134AD641C1A2500009A50DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7134AD6B1C1A2500009A50DD;
+			remoteInfo = "ElJayKit-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23AF1C1BE8FCA57021C1A7FF /* Pods-ElJayKit-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElJayKit-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElJayKit-Example/Pods-ElJayKit-Example.release.xcconfig"; sourceTree = "<group>"; };
+		6560F6425A2C46F56ACB2978 /* Pods_ElJayKit_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElJayKit_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7134AD6C1C1A2500009A50DD /* ElJayKit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ElJayKit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7134AD6F1C1A2500009A50DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7134AD711C1A2500009A50DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7134AD741C1A2500009A50DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7134AD761C1A2500009A50DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7134AD7B1C1A2500009A50DD /* ElJayKit-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ElJayKit-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7134AD7F1C1A2500009A50DD /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		7134AD811C1A2501009A50DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7134AD8B1C1A2795009A50DD /* ElJayKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ElJayKit.podspec; path = ../ElJayKit.podspec; sourceTree = "<group>"; };
+		7134AD8C1C1A2795009A50DD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7134AD8D1C1A2795009A50DD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		71CBEE741C2003A8002DBE63 /* VOKMockData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VOKMockData; sourceTree = "<group>"; };
+		8B9D1E5198BA147F393956AF /* Pods-ElJayKit-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElJayKit-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElJayKit-Example/Pods-ElJayKit-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A289B82F3A5A834FD243038F /* Pods-ElJayKit-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElJayKit-ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElJayKit-ExampleTests/Pods-ElJayKit-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB77758F981409C8703E60F5 /* Pods_ElJayKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElJayKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20C1F75663F2B0FACB1438E /* Pods-ElJayKit-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElJayKit-ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElJayKit-ExampleTests/Pods-ElJayKit-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7134AD691C1A2500009A50DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF30BA3ABAB087FDB293A0B /* Pods_ElJayKit_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7134AD781C1A2500009A50DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205686C9F96D98CB2A7F3A03 /* Pods_ElJayKit_ExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445C0C7F869DE78EDD464721 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D1E5198BA147F393956AF /* Pods-ElJayKit-Example.debug.xcconfig */,
+				23AF1C1BE8FCA57021C1A7FF /* Pods-ElJayKit-Example.release.xcconfig */,
+				F20C1F75663F2B0FACB1438E /* Pods-ElJayKit-ExampleTests.debug.xcconfig */,
+				A289B82F3A5A834FD243038F /* Pods-ElJayKit-ExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7134AD631C1A2500009A50DD = {
+			isa = PBXGroup;
+			children = (
+				7134AD8A1C1A2784009A50DD /* Podspec Metadata */,
+				7134AD6E1C1A2500009A50DD /* ElJayKit-Example */,
+				7134AD7E1C1A2500009A50DD /* ElJayKit-ExampleTests */,
+				7134AD6D1C1A2500009A50DD /* Products */,
+				445C0C7F869DE78EDD464721 /* Pods */,
+				E399CB3FC7DFECD5A613F0B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7134AD6D1C1A2500009A50DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7134AD6C1C1A2500009A50DD /* ElJayKit-Example.app */,
+				7134AD7B1C1A2500009A50DD /* ElJayKit-ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7134AD6E1C1A2500009A50DD /* ElJayKit-Example */ = {
+			isa = PBXGroup;
+			children = (
+				7134AD6F1C1A2500009A50DD /* AppDelegate.swift */,
+				7134AD711C1A2500009A50DD /* Assets.xcassets */,
+				7134AD731C1A2500009A50DD /* MainMenu.xib */,
+				7134AD761C1A2500009A50DD /* Info.plist */,
+			);
+			path = "ElJayKit-Example";
+			sourceTree = "<group>";
+		};
+		7134AD7E1C1A2500009A50DD /* ElJayKit-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				7134AD7F1C1A2500009A50DD /* APITests.swift */,
+				7134AD811C1A2501009A50DD /* Info.plist */,
+				71CBEE741C2003A8002DBE63 /* VOKMockData */,
+			);
+			path = "ElJayKit-ExampleTests";
+			sourceTree = "<group>";
+		};
+		7134AD8A1C1A2784009A50DD /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				7134AD8B1C1A2795009A50DD /* ElJayKit.podspec */,
+				7134AD8C1C1A2795009A50DD /* README.md */,
+				7134AD8D1C1A2795009A50DD /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E399CB3FC7DFECD5A613F0B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB77758F981409C8703E60F5 /* Pods_ElJayKit_Example.framework */,
+				6560F6425A2C46F56ACB2978 /* Pods_ElJayKit_ExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7134AD6B1C1A2500009A50DD /* ElJayKit-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7134AD841C1A2501009A50DD /* Build configuration list for PBXNativeTarget "ElJayKit-Example" */;
+			buildPhases = (
+				F0E4B4922DF0DE75CE7A2771 /* Check Pods Manifest.lock */,
+				7134AD681C1A2500009A50DD /* Sources */,
+				7134AD691C1A2500009A50DD /* Frameworks */,
+				7134AD6A1C1A2500009A50DD /* Resources */,
+				2EAA474788163D7E84CFE3C4 /* Embed Pods Frameworks */,
+				D0C64867B74D58AC63362DAC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ElJayKit-Example";
+			productName = "ElJayKit-Example";
+			productReference = 7134AD6C1C1A2500009A50DD /* ElJayKit-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7134AD7A1C1A2500009A50DD /* ElJayKit-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7134AD871C1A2501009A50DD /* Build configuration list for PBXNativeTarget "ElJayKit-ExampleTests" */;
+			buildPhases = (
+				F56CFBEC75B06634BFE96C77 /* Check Pods Manifest.lock */,
+				7134AD771C1A2500009A50DD /* Sources */,
+				7134AD781C1A2500009A50DD /* Frameworks */,
+				7134AD791C1A2500009A50DD /* Resources */,
+				948F2100F600E2FE35401AEB /* Embed Pods Frameworks */,
+				C397F4F459243B0315385889 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7134AD7D1C1A2500009A50DD /* PBXTargetDependency */,
+			);
+			name = "ElJayKit-ExampleTests";
+			productName = "ElJayKit-ExampleTests";
+			productReference = 7134AD7B1C1A2500009A50DD /* ElJayKit-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7134AD641C1A2500009A50DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Isaac Greenspan";
+				TargetAttributes = {
+					7134AD6B1C1A2500009A50DD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					7134AD7A1C1A2500009A50DD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7134AD6B1C1A2500009A50DD;
+					};
+				};
+			};
+			buildConfigurationList = 7134AD671C1A2500009A50DD /* Build configuration list for PBXProject "ElJayKit-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7134AD631C1A2500009A50DD;
+			productRefGroup = 7134AD6D1C1A2500009A50DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7134AD6B1C1A2500009A50DD /* ElJayKit-Example */,
+				7134AD7A1C1A2500009A50DD /* ElJayKit-ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7134AD6A1C1A2500009A50DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7134AD721C1A2500009A50DD /* Assets.xcassets in Resources */,
+				7134AD751C1A2500009A50DD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7134AD791C1A2500009A50DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CBEE751C2003A8002DBE63 /* VOKMockData in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EAA474788163D7E84CFE3C4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElJayKit-Example/Pods-ElJayKit-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		948F2100F600E2FE35401AEB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElJayKit-ExampleTests/Pods-ElJayKit-ExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C397F4F459243B0315385889 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElJayKit-ExampleTests/Pods-ElJayKit-ExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C64867B74D58AC63362DAC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElJayKit-Example/Pods-ElJayKit-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E4B4922DF0DE75CE7A2771 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F56CFBEC75B06634BFE96C77 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7134AD681C1A2500009A50DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7134AD701C1A2500009A50DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7134AD771C1A2500009A50DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7134AD801C1A2500009A50DD /* APITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7134AD7D1C1A2500009A50DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7134AD6B1C1A2500009A50DD /* ElJayKit-Example */;
+			targetProxy = 7134AD7C1C1A2500009A50DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7134AD731C1A2500009A50DD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7134AD741C1A2500009A50DD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7134AD821C1A2501009A50DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7134AD831C1A2501009A50DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7134AD851C1A2501009A50DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9D1E5198BA147F393956AF /* Pods-ElJayKit-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ElJayKit-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.2718.ElJayKit-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7134AD861C1A2501009A50DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23AF1C1BE8FCA57021C1A7FF /* Pods-ElJayKit-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ElJayKit-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.2718.ElJayKit-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7134AD881C1A2501009A50DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20C1F75663F2B0FACB1438E /* Pods-ElJayKit-ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ElJayKit-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.2718.ElJayKit-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElJayKit-Example.app/Contents/MacOS/ElJayKit-Example";
+			};
+			name = Debug;
+		};
+		7134AD891C1A2501009A50DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A289B82F3A5A834FD243038F /* Pods-ElJayKit-ExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ElJayKit-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.2718.ElJayKit-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElJayKit-Example.app/Contents/MacOS/ElJayKit-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7134AD671C1A2500009A50DD /* Build configuration list for PBXProject "ElJayKit-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7134AD821C1A2501009A50DD /* Debug */,
+				7134AD831C1A2501009A50DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7134AD841C1A2501009A50DD /* Build configuration list for PBXNativeTarget "ElJayKit-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7134AD851C1A2501009A50DD /* Debug */,
+				7134AD861C1A2501009A50DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7134AD871C1A2501009A50DD /* Build configuration list for PBXNativeTarget "ElJayKit-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7134AD881C1A2501009A50DD /* Debug */,
+				7134AD891C1A2501009A50DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7134AD641C1A2500009A50DD /* Project object */;
+}

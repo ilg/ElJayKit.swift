@@ -1,0 +1,12 @@
+osx_image: xcode7.2
+language: objective-c
+cache: cocoapods
+podfile: ElJayKit-Example/Podfile
+before_install:
+- gem install --no-ri --no-rdoc cocoapods # Since Travis is not always on latest version
+- pod install --project-directory=ElJayKit-Example
+xcode_workspace: ElJayKit-Example/ElJayKit-Example.xcworkspace
+xcode_scheme: ElJayKit-Example
+xcode_sdk: macosx
+after_success:
+- pod lib lint

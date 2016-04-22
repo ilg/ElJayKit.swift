@@ -1,6 +1,6 @@
 # ElJayKit
 
-[![CI Status](http://img.shields.io/travis/ilg/ElJayKit.svg?style=flat)](https://travis-ci.org/ilg/ElJayKit)
+[![CI Status](http://img.shields.io/travis/ilg/ElJayKit.swift.svg?style=flat)](https://travis-ci.org/ilg/ElJayKit.swift)
 [![Version](https://img.shields.io/cocoapods/v/ElJayKit.svg?style=flat)](http://cocoapods.org/pods/ElJayKit)
 [![License](https://img.shields.io/cocoapods/l/ElJayKit.svg?style=flat)](http://cocoapods.org/pods/ElJayKit)
 [![Platform](https://img.shields.io/cocoapods/p/ElJayKit.svg?style=flat)](http://cocoapods.org/pods/ElJayKit)
