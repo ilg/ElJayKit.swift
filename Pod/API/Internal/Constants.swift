@@ -1,0 +1,115 @@
+//
+//  Constants.swift
+//  ElJayKit
+//
+//  Created by Isaac Greenspan on 12/10/15.
+//  Copyright © 2015 Isaac Greenspan. All rights reserved.
+//
+
+extension API {
+    struct ParameterKey {
+        static let GetPicKws = "getpickws"
+        static let GetPicKwUrls = "getpickwurls"
+        static let GetMoods = "getmoods"
+        static let UseJournal = "usejournal"
+        static let SelectType = "selecttype"
+        static let Year = "year"
+        static let Month = "month"
+        static let Day = "day"
+        static let LineEndings = "lineendings"
+        static let NoProps = "noprops"
+        static let PreferSubject = "prefersubject"
+        static let Truncate = "truncate"
+        static let ItemId = "itemid"
+        static let Event = "event"
+        static let Subject = "subject"
+        static let IncludeFriendOf = "includefriendof"
+        static let IncludeGroups = "includegroups"
+        static let IncludeBirthdays = "includebdays"
+        static let AuthMethod = "auth_method"
+        static let AuthChallenge = "auth_challenge"
+        static let AuthResponse = "auth_response"
+        static let Username = "username"
+        static let ProtocolVersion = "ver"
+        static let ClientVersion = "clientversion"
+        static let SessionExpiration = "expiration"
+        static let SessionIPFixed = "ipfixed"
+        static let ExpireAllSessions = "expireall"
+        static let ExpireSessions = "expire"
+        static let LastUpdate = "lastupdate"
+        static let Mask = "mask"
+        static let Commands = "commands"
+    }
+    
+    struct ParameterValue {
+        static let Yes = "1"
+        static let No = "0"
+        static let Empty = ""
+        static let MacLineEndings = "mac"
+        static let DaySelectType = "day"
+        static let OneSelectType = "one"
+        static let AuthMethodChallenge = "challenge"
+        static let ProtocolVersion1 = "1"
+        static let SessionExpirationLong = "long"
+        static let SessionExpirationShort = "short"
+        
+        static func fromBool(bool: Bool) -> String {
+            return (bool ? ParameterValue.Yes : ParameterValue.No)
+        }
+    }
+    
+    struct ResponseKey {
+        static let MoodString = "name"
+        static let Id = "id"
+        static let DayCounts = "daycounts"
+        static let DayCountsDate = "date"
+        static let DayCountsCount = "count"
+        static let Events = "events"
+        static let EventsEventTime = "eventtime"
+        static let EventsEvent = "event"
+        static let EventsUrl = "url"
+        static let EventsItemId = "itemid"
+        static let Tags = "tags"
+        static let Name = "name"
+        static let Session = "ljsession"
+        static let Friends = "friends"
+        static let FriendUsername = "username"
+        static let FriendFullName = "fullname"
+        static let FriendIdentityType = "identity_type"
+        static let FriendIdentityValue = "identity_value"
+        static let FriendIdentityDisplay = "identity_display"
+        static let FriendType = "type"
+        static let FriendBirthday = "birthday"
+        static let FriendFGColor = "fgcolor"
+        static let FriendBGColor = "bgcolor"
+        static let FriendGroupMask = "groupmask"
+        static let Challenge = "challenge"
+        static let AuthScheme = "auth_scheme"
+        static let ExpireTimeStamp = "expire_time"
+        static let ServerTimeStamp = "server_time"
+        static let FullName = "fullname"
+        static let Message = "message"
+        static let FriendGroups = "friendgroups"
+        static let FriendOfs = "friendofs"
+        static let Usejournals = "usejournals"
+        static let Moods = "moods"
+        static let UserpicKeywords = "pickws"
+        static let UserpicURLs = "pickwurls"
+        static let DefaultUserpicURL = "defaultpicurl"
+        static let FastServer = "fastserver"
+        static let UserID = "userid"
+        static let Menus = "menus"
+        static let SortOrder = "sortorder"
+        static let Public = "public"
+        static let New = "new"
+        static let Interval = "interval"
+        static let SecurityLevel = "security_level"
+        static let Display = "display"
+        static let Uses = "uses"
+        static let Security = "security"
+        static let Private = "private"
+        static let Groups = "groups"
+        static let Success = "success"
+        static let Output = "output"
+    }
+}
